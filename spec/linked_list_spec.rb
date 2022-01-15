@@ -1,3 +1,4 @@
+require 'pry'
 describe LinkedList do
   describe "#reverse!" do
     context "with an empty list" do
@@ -76,7 +77,7 @@ describe LinkedList do
       it "updates the prev_node and next_node attributes of each node" do
         linked_list.reverse!
         # 3 <--> 2 <--> 1
-  
+        
         expect(node_3.prev_node).to eq(nil)
         expect(node_3.next_node).to eq(node_2)
   
